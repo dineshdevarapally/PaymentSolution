@@ -1,0 +1,16 @@
+.cardRoot{
+    margin-top: 221px;
+    margin-left: 57px;
+    width: 70%;
+    height: 30%;
+    text-align: center;
+    padding: 43px;
+    background: #EAEBF3 0% 0% no-repeat padding-box;
+    box-shadow: -5px -5px 15px #FFFFFFCB;
+}
+.cardTitle{
+    font: Bold 36px/29px Nunito Sans;
+    letter-spacing: 0px;
+    color: #28AC40;
+    opacity: 1;
+}
