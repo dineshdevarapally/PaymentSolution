@@ -1,16 +1,91 @@
 .cardRoot{
-    margin-top: 221px;
-    margin-left: 57px;
-    width: 70%;
-    height: 30%;
-    text-align: center;
-    padding: 43px;
     background: #EAEBF3 0% 0% no-repeat padding-box;
     box-shadow: -5px -5px 15px #FFFFFFCB;
-}
-.cardTitle{
-    font: Bold 36px/29px Nunito Sans;
-    letter-spacing: 0px;
+    border-radius: 12px;
     color: #28AC40;
+    letter-spacing: 0px;
     opacity: 1;
+    font: Bold 16/9px Nunito Sans;
+    text-align: center;
+    padding: 10px 10px 25px 10px;
+}
+.searchBox p{
+    border: 1px solid #ded5d5;
+    border-radius: 20px;
+    margin-right: 35px;
+    margin-left: 35px;
+    display: flex;
+    box-shadow: -6px -5px 15px #FFFFFFCB;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin: 0 auto;
+}
+.searchBox{
+    margin-right: 41px;
+}
+
+.searchBox input{
+    border: none;
+    outline: none;
+    width: 260px;
+    background: inherit;
+    padding-left: 8px;
+}
+.searchBox input::placeholder {
+    color: #28ac40;
+}
+.searchBox button{
+    color: #fff;
+    background: #28ac40;
+    display: inline-flex;
+    min-width: 120px;
+    border-radius: 15px;
+    height: 26px;
+    outline: none;
+}
+
+.searchBox p button label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffff;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+.btnStyle{
+   background-color: #28ac40;
+}
+.animationbtn{
+    display: block;
+}
+.animationbtn button img{
+    height: 28px;
+    margin-left: -8px;
+    margin-top: -2px;
+}
+.animationbtn button img:hover{
+    animation-name: animationimg;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+    margin-left: -6px;
+}
+
+@keyframes animationimg{
+    0%   { left:0px; top:0px;}
+    25%  { left:100px; top:0px;} 
+}
+@media (min-width: 767px){
+    .cardRoot{
+        margin-top: 30%;
+        margin-left: 57px;
+        width: 70%;
+        height: 30%;
+    }
+    .cardTitle{
+        font: Bold 36px/29px Nunito Sans;
+    }
+   
+    .searchBox p{
+        width: fit-content;
+    }
 }

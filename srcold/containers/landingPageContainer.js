@@ -2,24 +2,20 @@ import React from 'react';
 import Header from '../components/header/header';
 import Card from '../components/card/card';
 
-
 //css style 
 import './landingPage.css';
 
 export default function landingPageContainer() {
     return (
         <div className="container">
-            <Header />
+            <Header/>
             <div className='landingPage'>
                 <div className='textLabel'>
-                    <div className='textLabel1'>
-                        Powerful
-                        <br />
-                        <a className='textLabel2'>Payment Solutions</a>
-                    </div>
+                    <label className='textLabel1'>Powerful</label><br/>
+                    <label className='textLabel2'>Payment Solutions</label>
                 </div>
                 <div className='cardContainer'>
-                    <Card />
+                <Card/>
                 </div>
             </div>
         </div>
