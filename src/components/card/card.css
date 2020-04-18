@@ -58,13 +58,16 @@
     height: 28px;
     margin-left: -8px;
     margin-top: -2px;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
 }
 .animationbtn button img:hover{
-    animation-name: animationimg;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    position: relative;
-    margin-left: -6px;
+    transform: translate(350px,0);
+    -webkit-transform: translate(95px,0); /** Safari & Chrome **/
+    -o-transform: translate(95px,0); /** Opera **/
+    -moz-transform: translate(95px,0); /** Firefox **/
 }
 
 @keyframes animationimg{

@@ -5,6 +5,9 @@
     -webkit-backdrop-filter: blur(30px);
     height: 71px;
     display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .footerStyle p{
     margin: auto;
