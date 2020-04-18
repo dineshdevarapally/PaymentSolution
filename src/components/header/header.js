@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../../assets/logo.png';
+import LogoHover from '../../assets/logohover.png';
 import './header.css';
 
-export default function index() {
-    return (
+ const Header = () => {
+   const [isHover, setisHover] = useState(false)
+
+   return (
         <header className='root'>
             <nav >
                 <div className='headerContainer'>
                     <div className='logo'>
-                        <img src={Logo} />
+                        <img 
+                        onMouseOver={() => setisHover(!isHover)} 
+                        onMouseOut={() => setisHover(!isHover)} 
+                        src={isHover ? LogoHover : Logo} />
                     </div>
                     <div className='headerItem'>
                         <ul className="navigation">
@@ -33,3 +39,5 @@ export default function index() {
         </header>
     )
 }
+
+export default Header;

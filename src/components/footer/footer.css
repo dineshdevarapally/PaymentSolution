@@ -1,0 +1,14 @@
+.footerStyle{
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    height: 71px;
+    display: flex;
+}
+.footerStyle p{
+    margin: auto;
+}
+.footerStyle p:hover{
+    color: #00B140;
+}

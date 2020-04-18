@@ -7,7 +7,7 @@
     opacity: 1;
     font: Bold 16/9px Nunito Sans;
     text-align: center;
-    padding: 10px 10px 25px 10px;
+    padding: 43px 57px 80px 57px;
 }
 .searchBox p{
     border: 1px solid #ded5d5;
@@ -19,9 +19,6 @@
     margin-left: 32px;
     margin-right: 32px;
     margin: 0 auto;
-}
-.searchBox{
-    margin-right: 41px;
 }
 
 .searchBox input{
@@ -76,10 +73,8 @@
 }
 @media (min-width: 767px){
     .cardRoot{
-        margin-top: 30%;
         margin-left: 57px;
-        width: 70%;
-        height: 30%;
+        margin: auto;
     }
     .cardTitle{
         font: Bold 36px/29px Nunito Sans;

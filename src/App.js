@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <LandingPageContainer /> 
-    {/*   <PaymentDestination />*/}
+      {/* <PaymentDestination /> */}
     </div>
   );
 }

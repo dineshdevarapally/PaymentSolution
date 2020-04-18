@@ -6,21 +6,23 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,100%);
 }
 .landingPage{
     margin: 10px;
     font-weight: bold;
     padding-bottom: 10px;
-
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
 }
 .textLabel{
-    margin-top: 20px;
     color: #00B757;
     text-align: center;
     font-size: 30px;
 }
 .cardContainer{
-    margin: 25% 0 25% 0;
+    margin: auto;
 }
 
 @media (min-width: 767px){
@@ -31,12 +33,12 @@
     }
     .landingPage{
         width: 100%; 
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
     }
     .textLabel{
-        margin-top: 10%;
         margin-left: 41px;
-        width: 50%;
+        text-align: left;
     }
     .textLabel label{
         color: #00B757;
@@ -46,8 +48,9 @@
     .textLabel1{
         letter-spacing: -3.21px;
         font-size: 107px;
-        width: 50%;
-
+        font-weight: bold;
+        margin: 0;
+        text-align: left;
 
     }
     .textLabel2{
@@ -55,9 +58,6 @@
         font-size: 89px;
         font-weight: 400;
         white-space: initial; 
-    }
-    .cardContainer{
-        width: 50%;
         margin: 0;
     }
 }

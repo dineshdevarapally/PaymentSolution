@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../components/header/header';
 import Card from '../components/card/card';
-
+import Footer from '../components/footer/footer';
+import Header from '../components/header/header';
 
 //css style 
 import './landingPage.css';
@@ -12,16 +12,14 @@ export default function landingPageContainer() {
             <Header />
             <div className='landingPage'>
                 <div className='textLabel'>
-                    <div className='textLabel1'>
-                        Powerful
-                        <br />
-                        <a className='textLabel2'>Payment Solutions</a>
-                    </div>
+                    <p className='textLabel1'>  Powerful</p>
+                    <p className='textLabel2'>Payment Solutions</p>
                 </div>
                 <div className='cardContainer'>
                     <Card />
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
